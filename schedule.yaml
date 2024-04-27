@@ -1,7 +1,7 @@
 match_slot_lengths:
-  pre: 30
+  pre: 75
   match: 150
-  post: 60
+  post: 15
   total: 240
 
 staging:
