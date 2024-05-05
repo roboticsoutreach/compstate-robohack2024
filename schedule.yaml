@@ -46,22 +46,22 @@ static_knockout:
     0:  # Round of 8
       0:
         arena: main
-        start_time: 2024-05-05 12:46:00+01:00
+        start_time: 2024-05-05 12:50:00+01:00
         display_name: Heat 1
         teams: [S3, S10]
       1:
         arena: main
-        start_time: 2024-05-05 12:50:00+01:00
+        start_time: 2024-05-05 12:54:00+01:00
         display_name: Heat 2
         teams: [S5, S8]
       2:
         arena: main
-        start_time: 2024-05-05 12:54:00+01:00
+        start_time: 2024-05-05 12:58:00+01:00
         display_name: Heat 3
         teams: [S6, S7]
       3:
         arena: main
-        start_time: 2024-05-05 12:58:00+01:00
+        start_time: 2024-05-05 13:02:00+01:00
         display_name: Heat 4
         teams: [S4, S9]
     1: # Quarterfinals
