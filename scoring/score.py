@@ -25,7 +25,6 @@ class Scorer:
         line_deficit = 0
         num_cans = 0
         accumulated_score = 0
-        completed_first_lap = False
 
         for action in actions:
             action = action.upper()
@@ -39,20 +38,17 @@ class Scorer:
                 line_deficit += 1
             elif action == 'I':  # Forward over line
                 if line_deficit > 0:
-                    # If we have a line deficit, decrease it by one - we've just gone back
+                    # If we have a line deficit, decrease it by one - we've just gone back
                     # forward over a line
                     line_deficit -= 1
                 else:
-                    # This is a new line passed; first, we score can_count points directly
-                    accumulated_score += num_cans
+                    # This is a new line passed; first, we score 2^can_count points directly.
+                    accumulated_score += 1 + num_cans
                     # Then, we increase the number of lines passed by one
                     lines_passed += 1
-                    # And if it's a full lap, that is, after the first 7 lines and then
-                    # each multiple of 6, we get 4 bonus points
-                    if not completed_first_lap and lines_passed == 7:
-                        accumulated_score += 4
-                        completed_first_lap = True
-                    elif lines_passed % 6 == 0:
+                    # And if it's a full lap, that is, a multiple of 6 lines, we get 4 bonus
+                    # points
+                    if lines_passed % 6 == 0:
                         accumulated_score += 4
             else:
                 raise InvalidScoresheetException(f'Invalid action {action!r}')
