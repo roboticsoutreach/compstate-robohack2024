@@ -7,7 +7,7 @@ teams:
     present: true
     zone: 0
   T10:
-    actions: 
+    actions: ""
     disqualified: false
     present: true
     zone: 1
