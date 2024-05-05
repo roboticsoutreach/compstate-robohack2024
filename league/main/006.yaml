@@ -5,9 +5,9 @@ teams:
     actions: I
     disqualified: false
     present: true
-    zone: 1
+    zone: 0
   T02:
     actions: IIIIIIIII
     disqualified: false
     present: true
-    zone: 0
+    zone: 1
