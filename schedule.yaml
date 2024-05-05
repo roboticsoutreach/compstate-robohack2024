@@ -58,7 +58,7 @@ static_knockout:
         arena: main
         start_time: 2024-05-05 14:08:00+01:00
         display_name: Heat 3
-        teams: [S6, S8]
+        teams: [S6, S7]
       3:
         arena: main
         start_time: 2024-05-05 14:12:00+01:00
