@@ -2,12 +2,12 @@ arena_id: main
 match_number: 32
 teams:
   T10:
-    actions: II
+    actions: II  # 2
     disqualified: false
     present: true
     zone: 1
   T02:
-    actions: IIIIIIIIIIIIIIIIIIIIIIIIII
+    actions: IIIIIIIIIIIIIIIIIIIIIIIIII  # 26+4*4=42
     disqualified: false
     present: true
     zone: 0
